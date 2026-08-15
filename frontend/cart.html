@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart — KHAN SAHAB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="topbar">✦ FREE SHIPPING ON ORDERS OVER PKR 5,000 — KHAN SAHAB ROYAL COLLECTION ✦</div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">KHAN <span>SAHAB</span></a>
+            <div class="search-bar">
+                <input type="text" id="globalSearch" placeholder="Search for shirts, kameez, trousers...">
+                <button onclick="doSearch()">🔍</button>
+            </div>
+            <div class="header-icons">
+                <a href="#" title="My Account">🙍<span>Account</span></a>
+                <a href="cart.html" title="Cart">🛒<span>Cart</span><span class="cart-count" id="cartCount">0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <div class="nav-item">
+                <a href="men.html">MEN</a>
+                <div class="dropdown">
+                    <div class="dropdown-group">
+                        <h4>Formal Dressing</h4>
+                        <a href="men.html?sub=dress-pants">Dress Pants</a>
+                        <a href="men.html?sub=full-sleeves-shirts">Full Sleeves Shirts</a>
+                    </div>
+                    <div class="dropdown-group">
+                        <h4>Informal Dressing</h4>
+                        <a href="men.html?sub=kameez-shalwar">Kameez Shalwar</a>
+                        <a href="men.html?sub=cargos">Cargos</a>
+                        <a href="men.html?sub=t-shirts">T-Shirts</a>
+                        <a href="men.html?sub=pants">Pants</a>
+                        <a href="men.html?sub=shirts">Shirts</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="women.html">WOMEN</a>
+                <div class="dropdown">
+                    <div class="dropdown-group">
+                        <h4>Formal Dressing</h4>
+                        <a href="women.html?sub=pants">Pants</a>
+                        <a href="women.html?sub=coats">Coats</a>
+                        <a href="women.html?sub=western-dresses">Western Dresses</a>
+                    </div>
+                    <div class="dropdown-group">
+                        <h4>Informal Dressing</h4>
+                        <a href="women.html?sub=kameez-shalwar">Kameez Shalwar</a>
+                        <a href="women.html?sub=trousers">Trousers</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="kids.html">KIDS</a>
+                <div class="dropdown">
+                    <div class="dropdown-group">
+                        <h4>Formal Dressing</h4>
+                        <a href="kids.html?sub=dress-pants">Dress Pants (Kids)</a>
+                        <a href="kids.html?sub=full-sleeves-shirts">Full Sleeves Shirts (Kids)</a>
+                        <a href="kids.html?sub=pants">Pants (Kids)</a>
+                        <a href="kids.html?sub=coats">Coats (Kids)</a>
+                        <a href="kids.html?sub=western-dresses">Western Dresses (Kids)</a>
+                    </div>
+                    <div class="dropdown-group">
+                        <h4>Informal Dressing</h4>
+                        <a href="kids.html?sub=kameez-shalwar">Kameez Shalwar (Kids)</a>
+                        <a href="kids.html?sub=cargos">Cargos (Kids)</a>
+                        <a href="kids.html?sub=t-shirts">T-Shirts (Kids)</a>
+                        <a href="kids.html?sub=shirts">Shirts (Kids)</a>
+                        <a href="kids.html?sub=trousers">Trousers (Kids)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <h1>SHOPPING <span>CART</span></h1>
+        <p>Review your items and proceed to checkout</p>
+        <div class="breadcrumb">HOME / CART</div>
+    </section>
+
+    <!-- Cart Content -->
+    <div class="container">
+        <div id="cartWrap"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <div class="f-logo">KHAN <span>SAHAB</span></div>
+                <p>Premium clothing for men, women & kids. Royal quality fabrics, modern fits, and timeless elegance — tailored for kings.</p>
+                <div class="socials">
+                    <a href="#" title="Facebook">f</a>
+                    <a href="#" title="Instagram">◎</a>
+                    <a href="#" title="TikTok">♪</a>
+                    <a href="#" title="WhatsApp">✆</a>
+                </div>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <ul>
+                    <li>📍 Main Boulevard, Lahore</li>
+                    <li>📞 +92 300 1234567</li>
+                    <li>✉️ care@khansahab.pk</li>
+                    <li>🕘 Mon–Sat: 10am – 9pm</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return & Exchange</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="women.html">Women</a></li>
+                    <li><a href="kids.html">Kids</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 KHAN SAHAB. All rights reserved.<br>
+            <span class="pay">VISA • MASTERCARD • EASYPAISA • JAZZCASH • COD</span>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+    <script src="script.js"></script>
+</body>
+</html>
