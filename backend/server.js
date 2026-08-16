@@ -11,7 +11,7 @@ app.use(cors()); // CORS fix - frontend ko backend se connect karne ke liye
 app.use(express.json()); // JSON body parse karne ke liye
 
 // Frontend static files serve karo (CSS, JS, HTML)
-app.use(express.static(path.join(__dirname, '..', 'frontend')));
+app.use(express.static(path.join(__dirname, '..')));
 
 // Helper: file se saare products parhein
 function readProducts() {
